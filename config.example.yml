@@ -1,0 +1,15 @@
+settings:
+  # Script directory; empty uses the working directory
+  directory: ""
+  # Search subdirectories too
+  recursive: false
+  # Editor for the edit actions
+  editor: "nano"
+  # Units shown: system, user, or all
+  scope: "all"
+  # Default scope when installing: user or system
+  install_scope: "user"
+  # Directory with service.tmpl and timer.tmpl; empty uses the default lookup
+  template_dir: ""
+  # Deadline for each systemctl, systemd-analyze, and loginctl call
+  command_timeout_seconds: 30
