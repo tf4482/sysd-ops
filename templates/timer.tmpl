@@ -1,0 +1,22 @@
+[Unit]
+Description={{.Description}}
+
+[Timer]
+{{- if .OnCalendar}}
+OnCalendar={{.OnCalendar}}
+Persistent={{.Persistent}}
+{{- end}}
+{{- if .OnBootSec}}
+OnBootSec={{.OnBootSec}}
+{{- end}}
+{{- if .OnUnitActiveSec}}
+OnUnitActiveSec={{.OnUnitActiveSec}}
+{{- end}}
+{{- if .OnUnitInactiveSec}}
+OnUnitInactiveSec={{.OnUnitInactiveSec}}
+{{- end}}
+AccuracySec={{.AccuracySec}}
+RandomizedDelaySec={{.RandomizedDelaySec}}
+
+[Install]
+WantedBy=timers.target

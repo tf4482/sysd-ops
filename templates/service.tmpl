@@ -1,0 +1,13 @@
+[Unit]
+Description={{.Description}}
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+{{- if eq .Scope "system"}}
+User={{.User}}
+{{- end}}
+ExecStart={{.ExecStart}}
+TimeoutStartSec=2min
+PrivateTmp=yes
