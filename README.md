@@ -4,6 +4,8 @@ sysd-ops finds the shell scripts in a directory and shows which of them have a s
 timer and service of the same name. It installs new timers from templates, opens existing
 units in your editor, and uninstalls timers, all from one small command-line tool.
 
+![sysd-ops menu with the script list](docs/menu.png)
+
 ## ✨ Features
 
 - 🔎 **Discovery**: finds `.sh` files and shell files without extension, optionally in subdirectories.
@@ -55,6 +57,10 @@ units in both scopes gets one row per scope.
 | `complete` | Timer and service | Edit timer, edit service, uninstall timer |
 | `service-only` | Service without timer | Install the timer, edit service |
 | `timer-only` | Timer without service (broken) | Install the service, edit timer, uninstall timer |
+
+In the menu, choosing a script opens only the actions that fit its state:
+
+![sysd-ops action menu for a complete script](docs/actions.png)
 
 ## 🧩 Templates
 
