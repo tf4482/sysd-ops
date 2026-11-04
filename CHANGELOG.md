@@ -12,3 +12,4 @@ All notable changes follow [Keep a Changelog](https://keepachangelog.com/) and [
 - Install wizard and `install` command rendering units from templates
 - `edit-timer`, `edit-service`, and `uninstall` commands
 - Dry runs for every changing action
+- README with menu screenshots
